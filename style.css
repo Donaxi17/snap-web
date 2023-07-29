@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2? family= Epilogue:wght@500;700 & display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
 }
 
 header{
@@ -35,6 +38,8 @@ header .cuenta__snap{
 
 .cuenta__snap .lbl__login{
     margin-right: 20px;
+    cursor: pointer;
+    user-select: none;
 }
 
 .cuenta__snap div{
@@ -42,9 +47,11 @@ header .cuenta__snap{
     align-items: center;
     justify-content: center;
     border: 1px solid black;
-    height: 34px;
-    width: 84px;
-    border-radius: 6px; 
+    height: 32px;
+    width: 92px;
+    border-radius: 8px; 
+    cursor: pointer;
+    user-select: none;
 }
 
 main{
@@ -62,16 +69,18 @@ main .segunda__section img{
 }
 
 .primera__section h1{
-    font-size: 60px;
+    font-size: 64px;
 }
 
 .primera__section .descripcion__titulo{
-    margin-top: 20px;
-    max-width: 300px;
+    margin-top: 30px;
+    max-width: 360px;
+    color: rgba(0, 0, 0, 0.40);
+    font-weight: bold;
 }
 
 .primera__section .botom__learnMore{
-    margin-top: 30px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,7 +88,10 @@ main .segunda__section img{
     height: 32px;
     background: black;
     border-radius: 8px;
+    font-size: 13px;
     color: white;
+    cursor: pointer;
+    user-select: none;
 }
 
 .primera__section .imagenes__cliente{
@@ -88,4 +100,5 @@ main .segunda__section img{
 
 .imagenes__cliente img{
     margin-right: 26px;
+    user-select: none;
 }
