@@ -1,86 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="stylesheet" href="style.css">
-    <script src="./main.js" defer></script>
-    
-    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
-  </head>
-  <body>
-     
-    <header>
-      <div class="logo__links">
-        <img src="./images/logo.svg" alt="logo">
-        <article>
-          <ul class="links__pagina">
-            <a href="">Features <img src="./images/icon-arrow-down.svg" alt=""></a>
-            <div class="conten__features" id="conten__features">
-              <div>
-                <img src="./images/icon-todo.svg" alt="">
-                <p>Todo List</p>
-              </div>
-              <div>
-                <img src="./images/icon-calendar.svg" alt="">
-                <p>Calendar</p>
-              </div>
-              <div>
-                <img src="./images/icon-reminders.svg" alt="" class="icon-reminders">
-                <p>Reminders</p>
-              </div>
-              <div>
-                <img src="./images/icon-planning.svg" alt="">
-                <p>Planning</p>
-              </div>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="./main.js" defer></script>
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+</head>
+
+<body>
+
+  <div id="fondo__negro">
+  </div>
+
+  <header>
+    <div class="logo__links">
+      <img src="./images/logo.svg" alt="logo">
+      <article>
+        <ul class="links__pagina">
+          <a id="lbl__Feature">Features <img src="./images/icon-arrow-down.svg" alt=""> </a>
+          <div class="conten__features" id="conten__features">
+            <div>
+              <img src="./images/icon-todo.svg" alt="">
+              <p>Todo List</p>
             </div>
-            <a href="">Company <img src="./images/icon-arrow-down.svg" alt=""></a>
-            <div class="conten__company" id="conten__company">
-              <p>History</p>
-              <p>Our Team</p>
-              <p>Blog</p>
+            <div>
+              <img src="./images/icon-calendar.svg" alt="">
+              <p>Calendar</p>
             </div>
-            <a href="">Carees</a>
-            <a href="">About</a>
-          </ul>
-        </article>
+            <div>
+              <img src="./images/icon-reminders.svg" alt="" class="icon-reminders">
+              <p>Reminders</p>
+            </div>
+            <div>
+              <img src="./images/icon-planning.svg" alt="">
+              <p>Planning</p>
+            </div>
+          </div>
+          <a id="lbl__company">Company <img src="./images/icon-arrow-down.svg" alt=""></a>
+          <div class="conten__company" id="conten__company">
+            <p>History</p>
+            <p>Our Team</p>
+            <p>Blog</p>
+          </div>
+          <a href="">Carees</a>
+          <a href="">About</a>
+        </ul>
+      </article>
+    </div>
+    <div class="cuenta__snap">
+      <p class="lbl__login">Login</p>
+      <div>
+        <p>Register</p>
       </div>
-      <div class="cuenta__snap">
-        <p class="lbl__login">Login</p>
-        <div>
-          <p>Register</p>
+    </div>
+    <figure>
+      <img src="./images/icon-menu.svg" alt="icono Menu" id="icono__menu">
+      <div class="menu__movil" id="menu__movil">
+        <img src="./images/icon-close-menu.svg" alt="icon close menu" id="icono__closeMenu">
+        <ul>
+          <li id="lbl__feactures__movil" class="quitar__estiloLista">Features <img src="./images/icon-arrow-down.svg"
+              alt=""></li>
+          <div id="conten__feactures__movil">
+            <div>
+              <img src="./images/icon-todo.svg" alt="">
+              <p>Todo List</p>
+            </div>
+            <div>
+              <img src="./images/icon-calendar.svg" alt="">
+              <p>Calendar</p>
+            </div>
+            <div>
+              <img src="./images/icon-reminders.svg" alt="" class="icon-reminders">
+              <p>Reminders</p>
+            </div>
+            <div>
+              <img src="./images/icon-planning.svg" alt="">
+              <p>Planning</p>
+            </div>
+          </div>
+          <li class="quitar__estiloLista" id="lbl__company__movil">Company <img src="./images/icon-arrow-down.svg"
+              alt=""></li>
+          <div class="conten__company__movil" id="conten__company__movil">
+            <p>History</p>
+            <p>Our Team</p>
+            <p>Blog</p>
+          </div>
+          <li class="quitar__estiloLista">Carees</li>
+          <li class="quitar__estiloLista">About</li>
+        </ul>
+        <div class="seccion__movil">
+          <p>Login</p>
+          <div>
+            <p>Register</p>
+          </div>
         </div>
       </div>
-      <figure>
-        <img src="./images/icon-menu.svg" alt="">
-      </figure>
-    </header>
+    </figure>
+  </header>
 
-    <main>
-      <section class="primera__section">
-        <h1>Make remote work</h1>
-        <p class="descripcion__titulo">
-          Get your team in sync, no matter your latation,
-          Streamline processes. create team rituals. and
-          watch productivity soar.
-        </p>
-        <div class="botom__learnMore">
-          <p>Learn more</p>
-        </div>
-        <div class="imagenes__cliente">
-          <img src="./images/client-databiz.svg" alt="">
-          <img src="./images/client-audiophile.svg" alt="">
-          <img src="./images/client-meet.svg" alt="">
-          <img src="./images/client-maker.svg" alt="">
-        </div>
-      </section>
-      <section class="segunda__section">
-        <!-- <img src="./images/image-hero-desktop.png" alt=""> -->
-      </section>
-    </main>
+  <main>
+    <section class="primera__section">
+      <h1>Make remote work</h1>
+      <p class="descripcion__titulo">
+        Get your team in sync, no matter your latation,
+        Streamline processes. create team rituals. and
+        watch productivity soar.
+      </p>
+      <div class="botom__learnMore">
+        <p>Learn more</p>
+      </div>
+      <div class="imagenes__cliente">
+        <img src="./images/client-databiz.svg" alt="">
+        <img src="./images/client-audiophile.svg" alt="">
+        <img src="./images/client-meet.svg" alt="">
+        <img src="./images/client-maker.svg" alt="">
+      </div>
+    </section>
+    <section class="segunda__section">
+    </section>
+  </main>
 
-  </body>
+</body>
 </html>
