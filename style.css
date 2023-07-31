@@ -127,7 +127,7 @@ header figure{
 
 .menu__movil{
     background: white;
-    height: 100vh;
+    height: 160vh;
     width: 240px;
     position: fixed;
     top: 0;
@@ -218,8 +218,8 @@ header figure{
 #fondo__negro{
     position: absolute;
     background-color: rgba(0, 0, 0, 0.80);
-    height: 200vh;
-    width: 100vw;
+    height: 160vh;
+    width: 160vw;
     cursor: pointer;
     display: none;
 }
@@ -282,7 +282,7 @@ main .segunda__section{
 }
 
 .imagenes__cliente img {
-    margin-right: 26px;
+    margin-right: 14px;
     user-select: none;
 }
 
@@ -307,7 +307,7 @@ main .segunda__section{
         margin-top: 50px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
+        gap: 10px;
     }
 }
 
@@ -382,6 +382,6 @@ main .segunda__section{
 
 @media screen and (max-width: 500px) {
     header{
-        width: 486px;
+        width: 480px;
     }
 }

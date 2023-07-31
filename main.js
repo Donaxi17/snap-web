@@ -5,21 +5,23 @@ var contenFeatures = document.getElementById("conten__features");
 var lblCompany = document.getElementById("lbl__company");
 var contenCompany = document.getElementById("conten__company");
 
-
 lblFeature.addEventListener("click", () => {
-    contenFeatures.style.display = "block";
-})
-
-lblFeature.addEventListener("dblclick", () => {
-    contenFeatures.style.display = "none";
+    if (contenFeatures.style.display === 'none') {
+        // Si el elemento está oculto, mostrarlo
+        contenFeatures.style.display = 'block';
+    } 
+    else{
+        // Si el elemento está visible, ocultarlo
+        contenFeatures.style.display = 'none';
+    }
 })
 
 lblCompany.addEventListener("click", () => {
-    contenCompany.style.display = "block";
-})
-
-lblCompany.addEventListener("dblclick", () => {
-    contenCompany.style.display = "none";
+    if (contenCompany.style.display === 'none') {
+        contenCompany.style.display = 'block';
+    } else {
+        contenCompany.style.display = 'none';
+    }
 })
 
 // menu movil
@@ -34,7 +36,6 @@ var lblCompanyMovil = document.getElementById("lbl__company__movil");
 var contenCompanyMovil = document.getElementById("conten__company__movil");
 
 var fondoNegro = document.getElementById("fondo__negro");
-
 
 
 iconoMenu.addEventListener("click", () => {
@@ -53,17 +54,17 @@ iconoCloseMenu.addEventListener("click", () => {
 })
 
 lblFeacturesMovil.addEventListener("click", () => {
-    contenFeacturesMovil.style.display = "block";
-})
-
-lblFeacturesMovil.addEventListener("dblclick", () => {
-    contenFeacturesMovil.style.display = "none";
+    if (contenFeacturesMovil.style.display === 'none') {
+        contenFeacturesMovil.style.display = 'block';
+    } else {
+        contenFeacturesMovil.style.display = 'none';
+    }
 })
 
 lblCompanyMovil.addEventListener("click", () => {
-    contenCompanyMovil.style.display = "block";
-})
-
-lblCompanyMovil.addEventListener("dblclick", () => {
-    contenCompanyMovil.style.display = "none";
+    if (contenCompanyMovil.style.display === 'none') {
+        contenCompanyMovil.style.display = 'block';
+    } else {
+        contenCompanyMovil.style.display = 'none';
+    }
 })
