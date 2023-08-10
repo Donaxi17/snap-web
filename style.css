@@ -30,6 +30,7 @@ header .logo__links {
     color: rgba(0, 0, 0, 0.50);
     text-decoration: none;
     cursor: pointer;
+    user-select: none;
 }
 
 .links__pagina a:hover {
@@ -279,6 +280,7 @@ main .segunda__section{
 
 .primera__section .imagenes__cliente {
     margin-top: 50px;
+
 }
 
 .imagenes__cliente img {
